@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.4</TargetFramework>
+        <PackageId>EntityFramework.Repository.Abstract</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>René Sackers</Authors>
+        <Description>Abstract code for EF repository pattern</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageReleaseNotes>First release</PackageReleaseNotes>
+        <Copyright></Copyright>
+        <PackageTags>entityframework repository abstract</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
+    </ItemGroup>
+
+    <Target Name="CopyPackage" AfterTargets="Pack">
+        <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="D:\NuGet" />
+    </Target>
+
+</Project>

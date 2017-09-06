@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EntityFramework.Repository.Abstract.Models
+namespace EntityFrameworkCore.Repository.Abstract.Models
 {
     public class PagedResult<T>
     {

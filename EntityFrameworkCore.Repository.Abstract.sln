@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Repository.Abstract", "EntityFramework.Repository.Abstract\EntityFramework.Repository.Abstract.csproj", "{77C64D38-F004-49EC-8977-934D1C3DB7A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Repository.Abstract", "EntityFrameworkCore.Repository.Abstract\EntityFrameworkCore.Repository.Abstract.csproj", "{77C64D38-F004-49EC-8977-934D1C3DB7A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51BD1203-1147-4446-A029-DA18EAF25240}
 	EndGlobalSection
 EndGlobal

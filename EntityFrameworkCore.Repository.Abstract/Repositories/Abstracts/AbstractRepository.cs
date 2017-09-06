@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EntityFramework.Repository.Abstract.Extensions;
-using EntityFramework.Repository.Abstract.Models;
-using EntityFramework.Repository.Abstract.Models.Interfaces;
-using EntityFramework.Repository.Abstract.Repositories.Interfaces;
+using EntityFrameworkCore.Repository.Abstract.Extensions;
+using EntityFrameworkCore.Repository.Abstract.Models;
+using EntityFrameworkCore.Repository.Abstract.Models.Interfaces;
+using EntityFrameworkCore.Repository.Abstract.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFramework.Repository.Abstract.Repositories.Abstracts
+namespace EntityFrameworkCore.Repository.Abstract.Repositories.Abstracts
 {
     public abstract class AbstractRepository<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : class, IId<TKey>
     {

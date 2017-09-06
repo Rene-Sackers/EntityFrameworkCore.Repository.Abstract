@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace EntityFramework.Repository.Abstract.Extensions
+namespace EntityFrameworkCore.Repository.Abstract.Extensions
 {
     public static class QueryableExtensions
     {

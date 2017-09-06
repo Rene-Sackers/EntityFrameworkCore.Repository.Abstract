@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EntityFramework.Repository.Abstract.Models;
-using EntityFramework.Repository.Abstract.Models.Interfaces;
+using EntityFrameworkCore.Repository.Abstract.Models;
+using EntityFrameworkCore.Repository.Abstract.Models.Interfaces;
 
-namespace EntityFramework.Repository.Abstract.Repositories.Interfaces
+namespace EntityFrameworkCore.Repository.Abstract.Repositories.Interfaces
 {
     public interface IRepository
     {

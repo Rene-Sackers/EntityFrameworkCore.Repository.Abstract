@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFramework.Repository.Abstract.Extensions
+namespace EntityFrameworkCore.Repository.Abstract.Extensions
 {
     public static class DbSetExtensions
     {

@@ -1,4 +1,4 @@
-﻿namespace EntityFramework.Repository.Abstract.Models.Interfaces
+﻿namespace EntityFrameworkCore.Repository.Abstract.Models.Interfaces
 {
     public interface IId<TKey>
     {

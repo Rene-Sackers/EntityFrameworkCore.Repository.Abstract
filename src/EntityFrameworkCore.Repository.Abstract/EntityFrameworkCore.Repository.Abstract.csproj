@@ -1,23 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard1.5</TargetFramework>
-        <PackageId>EntityFramework.Repository.Abstract</PackageId>
-        <PackageVersion>1.0.2</PackageVersion>
-        <Authors>René Sackers</Authors>
-        <Description>Abstract code for EF repository pattern</Description>
-        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <PackageReleaseNotes>First release</PackageReleaseNotes>
-        <Copyright></Copyright>
-        <PackageTags>entityframework repository abstract</PackageTags>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <AssemblyVersion>1.0.2.0</AssemblyVersion>
-        <Version>1.0.2</Version>
-        <FileVersion>1.0.2.0</FileVersion>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard1.5</TargetFramework>
+		<PackageId>EntityFramework.Repository.Abstract</PackageId>
+		<PackageVersion>1.0.2</PackageVersion>
+		<Authors>René Sackers</Authors>
+		<Description>Abstract code for EF repository pattern</Description>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageReleaseNotes>First release</PackageReleaseNotes>
+		<Copyright></Copyright>
+		<PackageTags>entityframework repository abstract</PackageTags>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>1.0.2.0</AssemblyVersion>
+		<Version>1.0.2</Version>
+		<FileVersion>1.0.2.0</FileVersion>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
+	</ItemGroup>
+
+	<Target Name="CopyPackage" AfterTargets="Pack">
+		<RemoveDir Directories="$(SolutionDir)..\.nuget\packages\" />
+		<Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(SolutionDir)..\.nuget\packages\" />
+	</Target>
 
 </Project>
